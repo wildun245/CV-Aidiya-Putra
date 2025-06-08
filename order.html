@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Pemesanan - CV Aidiya Putra</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="img/logo.jpeg" alt="Logo CV Aidiya Putra" class="logo">
+    <h1>Formulir Pemesanan</h1>
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="services.html">Layanan</a>
+      <a href="order.html">Pemesanan</a>
+      <a href="contact.html">Kontak</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Silakan isi formulir berikut untuk melakukan pemesanan:</h2>
+      <form action="send_order.php" method="post" enctype="multipart/form-data">
+        <label>Nama:</label><br>
+        <input type="text" name="nama" required><br>
+
+        <label>Instansi:</label><br>
+        <input type="text" name="instansi"><br>
+
+        <label>Email:</label><br>
+        <input type="email" name="email" required><br>
+
+        <label>Nomor Telepon:</label><br>
+        <input type="text" name="telepon"><br>
+
+        <label>Layanan:</label><br>
+        <select name="layanan">
+          <option value="atk">ATK</option>
+          <option value="alat_peraga">Alat Peraga</option>
+          <option value="percetakan">Percetakan</option>
+        </select><br>
+
+        <label>Spesifikasi/Jumlah:</label><br>
+        <textarea name="spesifikasi" rows="4"></textarea><br>
+
+        <label>Upload File (jika ada):</label><br>
+        <input type="file" name="file"><br><br>
+
+        <button type="submit">Kirim Pemesanan</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 CV Aidiya Putra</p>
+  </footer>
+</body>
+</html>
